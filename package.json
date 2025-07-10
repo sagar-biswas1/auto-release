@@ -1,8 +1,20 @@
 {
   "name": "my-electron-vite-project",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
+  "description": "A productivity and wellness desktop app.",
+  "author": {
+    "name": "Programming hero",
+    "email": "zenyora@gmail.com"
+  },
+  "repository": "https://github.com/sagar-biswas1/auto-release",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
+
+  "homepage": "https://www.zenyora.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && electron-builder",
@@ -10,7 +22,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "electron-updater": "^6.6.2",
+    "electron-updater": "^5.3.0",
+
+    "electron-log": "^5.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
